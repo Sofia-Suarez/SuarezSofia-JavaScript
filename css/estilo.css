@@ -175,5 +175,64 @@
 }
 #textoinsc {
   color: white;
-  
+}
+#cajaCurso {
+  width: 18rem;
+  background-color: rgb(68, 71, 68);
+  border-color: rgb(93, 102, 93);
+  border-width: 3px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+.tituloCurso {
+  color: rgb(174, 177, 174);
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 35px;
+}
+.textoCurso {
+  color: rgb(174, 177, 174);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+#inscrbirmeCurso-Pasteleria {
+background-color: rgb(172, 141, 101);
+border-color: rgb(172, 141, 101);
+border-radius: 5px;
+margin: 5px;
+margin-bottom: 20px;
+}
+#inscrbirmeCurso-Amateur {
+  background-color: rgb(172, 141, 101);
+  border-color: rgb(172, 141, 101);
+  border-radius: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+#inscrbirmeCurso-Bartender {
+  background-color: rgb(172, 141, 101);
+  border-color: rgb(172, 141, 101);
+  border-radius: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+  #inscrbirmeCurso-Panes {
+    background-color: rgb(172, 141, 101);
+    border-color: rgb(172, 141, 101);
+  border-radius: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.tituloCC {
+  font-size: 43px;
+  color: rgb(172, 141, 101);
+}
+.darkMode{
+  color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+#botonModo {
+  background-color: rgb(93, 102, 93);
+  border-color: rgb(68, 71, 68);
+  color: rgb(50, 53, 50);
 }

@@ -1,4 +1,6 @@
 let formInscripcion = document.getElementById ("formInscripcion")
+let containerCursos = document.getElementById ("cursos")
+
 function inscripcionEnviada (){
     alert ("¡Gracias por inscribirte! Pronto un representante se pondra en contacto con usted.")
     formInscripcion.reset ()
@@ -15,48 +17,60 @@ class Curso{
        this.precio = precio
     }
   }
-  const curso1 = new Curso("pasteleria","masas, merengues, tartas, tortas", "6 meses", 60000)
-  const curso2 = new Curso("amateur", "sushi, empanadas, tartas, paellas", "4 meses", 45000)
-  const curso3 = new Curso("bartender", "caipiriña, fernet, whisky, cervazas", "10 meses", 90000)
-  const curso4 = new Curso("panes", "minion, frances, masa madre", "3 meses", 40000)
-  const seccion = []
-  seccion.push(curso1,curso2,curso3,curso4)
-  
-  // function mostrarListado(array){
-  //   console.log("Nuestros cursos son: ")
-  //   for(let curso of array){
-  //       console.log("El curso de" ,curso.nombre, "tiene una duracion de", curso.duracion,", sus temas principales son", curso.temas, "y su precio es de $" ,curso.precio)
-  //   }
-  // }
-
+  const curso1 = new Curso("Pasteleria","masas, merengues, tartas, tortas", "6 meses", 60000)
+  const curso2 = new Curso("Amateur", "sushi, empanadas, tartas, paellas", "4 meses", 45000)
+  const curso3 = new Curso("Bartender", "caipiriña, fernet, whisky, cervazas", "10 meses", 90000)
+  const curso4 = new Curso("Panes", "minion, frances, masa madre", "3 meses", 40000)
+  const arrayCursos = []
+  arrayCursos.push(curso1,curso2,curso3,curso4)
 
 const mostrarListado = (data) => {
-  data.forEach(cursos => {
+  data.forEach(curso => {
    const tarjCursos = document.createElement(`article`)
-   tarjCursos.setAttribute (`class` , `cajaCurso`)
+   tarjCursos.setAttribute (`class` , `col-sm-6 mb-3 mb-sm-0`)
    tarjCursos.innerHTML = `
-                          <div
-                          <h1 class= "tituloCurso"> ${this.nombre} </h1>
-                          <h2 class= "textoCurso" > ${this.temas} </h2>
-                          <h2 class= "textoCurso" > ${this.duracion} </h2>
-                          <h2 class= "textoCurso" > ${this.precio} </h2>            
-                          <button id="inscrbirmeCurso"> Inscribirme</button>
+                          <div id="cajaCurso" class= "card-title">
+                          <h1 class= "tituloCurso">  ${curso.nombre} </h1>
+                          <h2 class= "textoCurso" > Temas: ${curso.temas} </h2>
+                          <h2 class= "textoCurso" > Duración: ${curso.duracion} </h2>
+                          <h2 class= "textoCurso" > $${curso.precio} </h2>            
+                          <button id="inscrbirmeCurso-${curso.nombre}"> Inscribirme</button>
                           </div>
                           `
-   cursos.appendChild(tarjCursos)
-  })
-  const inscrbirmeCurso = document.querySelectorAll (`inscribirmeCurso`)
-  inscrbirmeCurso.forEach (el => {
-    el.addEventListener(`click` , (e) =>{
-      agregarAlCarrito(e.Curso.id)
-    })
-  })
+   containerCursos.appendChild(tarjCursos)
+   const inscrbirmeCurso = document.getElementById (`inscrbirmeCurso-${curso.nombre}`)
+   inscrbirmeCurso.addEventListener(`click` , () =>{
+       agregarAlCarrito(curso.nombre)
+     })
+   })
+  }
+mostrarListado(arrayCursos)
+const carrito = []
+function agregarAlCarrito (nombre) {
+  let cursoEncontrado = arrayCursos.find (prod => prod.nombre === nombre)
+  carrito.push (cursoEncontrado)
+  console.log (carrito) 
+  }
+  let botonModo = document.getElementById("botonModo")
+console.log(botonModo)
+if(localStorage.getItem("modoOscuro")){
+
+}else{
+    localStorage.setItem("modoOscuro", false)
 }
 
-mostrarListado(Curso)
-const carrito = []
-function agregarAlCarrito (id) {
-  let cursoEncontrado = Curso.find (prod =>.id === parseInt(id))
-  carrito.push (cursoEncontrado)
-  
+if(JSON.parse(localStorage.getItem("modoOscuro")) == true){
+    document.body.classList.toggle("darkMode")
+    botonModo.innerText = "Modo oscuro"
 }
+botonModo.addEventListener("click", () => {
+    document.body.classList.toggle("darkMode")
+    if(JSON.parse(localStorage.getItem("modoOscuro")) == false){
+      botonModo.innerText = "Modo oscuro"
+        localStorage.setItem("modoOscuro", true)
+    }
+    else if(JSON.parse(localStorage.getItem("modoOscuro")) == true){
+      botonModo.innerText = "Modo claro"
+        localStorage.setItem("modoOscuro", false)
+    }
+})
