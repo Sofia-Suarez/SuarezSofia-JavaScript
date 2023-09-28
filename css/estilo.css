@@ -1,0 +1,179 @@
+@charset "UTF-8";
+.btn--whatsapp {
+  color: #2bdd1b;
+}
+
+.btn--instagram {
+  color: #aa1a5d;
+}
+
+.btn--telefono {
+  color: #30af25;
+}
+
+.btn--twitter {
+  color: #1178cc;
+}
+
+.btn--whatsappborde {
+  border-color: #2bdd1b;
+}
+
+.btn--instagramborde {
+  border-color: #aa1a5d;
+}
+
+.btn--telefonoborde {
+  border-color: #30af25;
+}
+
+.btn--twitterborde {
+  border-color: #1178cc;
+}
+
+.iconosfooter {
+  width: 50px;
+  height: 30px;
+}
+
+.footer {
+  background-color: rgb(50, 53, 50);
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+.textofooter {
+  color: white;
+  margin: 2px;
+}
+
+.body, .bordes {
+  background-color: rgb(68, 71, 68);
+  overflow-x: hidden;
+}
+
+.bordes {
+  margin-bottom: 10px;
+}
+
+#nav {
+  background-color: rgb(93, 102, 93);
+}
+
+.palabrasnav {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.iconoscontacto {
+  width: 30px;
+}
+
+.mapa {
+  height: 70%;
+}
+
+#contenedoriconos {
+  width: 50%;
+  position: relative;
+  padding-top: 5%;
+  text-align: center;
+}
+
+#contenedoricymap {
+  width: 100%;
+}
+
+.seleccione, .seleccione1 {
+  color: white;
+  margin-top: 1px;
+  margin-bottom: 0, 5px;
+  margin-left: 2px;
+}
+
+.seleccione1 {
+  margin-top: 10px;
+}
+
+.form {
+  margin: 2px;
+}
+
+.enviar {
+  background-color: rgb(93, 102, 93);
+  color: white;
+  margin: 10px;
+  margin-left: 3px;
+}
+
+.fotoinicial {
+  width: 100%;
+}
+
+#contenedorimagen {
+  background-color: rgb(93, 102, 93);
+}
+
+.frase1, .palabrasnav, .textoiconoscontacto {
+  color: white;
+}
+
+#plato {
+  width: 50%;
+}
+
+#contenedortexto {
+  background-color: rgb(68, 71, 68);
+}
+
+.contenedor1 {
+  height: 250px;
+  background-color: rgb(93, 102, 93);
+  margin-top: 2%;
+  color: white;
+}
+
+.contenedorespestañas {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+#inscripcion {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(50, 53, 50);
+}
+
+.seleccione, .seleccione1 {
+  color: white;
+  margin-top: 1px;
+  margin-bottom: 0, 5px;
+  margin-left: 2px;
+}
+
+#main {
+  min-height: 60vh;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#buscador {
+  background-color: rgb(93, 102, 93) ;
+  border-color: rgb(68, 71, 68);
+  color: white;
+}
+#cajabuscador {
+  margin-right: 40px;
+  margin-left: 20px;
+}
+#textoinsc {
+  color: white;
+  
+}
