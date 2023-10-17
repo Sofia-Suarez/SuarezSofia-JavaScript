@@ -195,34 +195,6 @@ font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
-#inscrbirmeCurso-Pasteleria {
-background-color: rgb(172, 141, 101);
-border-color: rgb(172, 141, 101);
-border-radius: 5px;
-margin: 5px;
-margin-bottom: 20px;
-}
-#inscrbirmeCurso-Amateur {
-  background-color: rgb(172, 141, 101);
-  border-color: rgb(172, 141, 101);
-  border-radius: 5px;
-  margin: 5px;
-  margin-bottom: 20px;
-}
-#inscrbirmeCurso-Bartender {
-  background-color: rgb(172, 141, 101);
-  border-color: rgb(172, 141, 101);
-  border-radius: 5px;
-  margin: 5px;
-  margin-bottom: 20px;
-}
-  #inscrbirmeCurso-Panes {
-    background-color: rgb(172, 141, 101);
-    border-color: rgb(172, 141, 101);
-  border-radius: 5px;
-  margin: 5px;
-  margin-bottom: 20px;
-}
 .tituloCC {
   font-size: 43px;
   color: rgb(172, 141, 101);
@@ -244,4 +216,8 @@ margin-bottom: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+a{
+  text-decoration: none;
+  color: black  ;
 }
