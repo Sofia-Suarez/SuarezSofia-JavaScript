@@ -177,10 +177,10 @@
   color: white;
 }
 #cajaCurso {
-  width: 18rem;
-  background-color: rgb(68, 71, 68);
-  border-color: rgb(93, 102, 93);
-  border-width: 3px;
+  display: grid;
+  align-items:flex-end;
+  background-color: rgb(110, 112, 110);
+  border-width: 100px;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
@@ -193,7 +193,7 @@ font-size: 35px;
 .textoCurso {
   color: rgb(174, 177, 174);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 18px;
 }
 #inscrbirmeCurso-Pasteleria {
 background-color: rgb(172, 141, 101);
@@ -226,6 +226,10 @@ margin-bottom: 20px;
 .tituloCC {
   font-size: 43px;
   color: rgb(172, 141, 101);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .darkMode{
   color:rgb(255, 255, 255);
@@ -235,4 +239,9 @@ margin-bottom: 20px;
   background-color: rgb(93, 102, 93);
   border-color: rgb(68, 71, 68);
   color: rgb(50, 53, 50);
+}
+#main{
+display: flex;
+justify-content: center;
+align-items: center;
 }
