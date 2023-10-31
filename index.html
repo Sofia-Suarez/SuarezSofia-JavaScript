@@ -48,59 +48,59 @@
                     <div class="col-3">
                       <div class="">
                         <label for="staticEmail2" class="visually-hidden">Nombre:</label>
-                        <input type="text" readonly class="form-control-plaintext frase1"  class="staticEmail2" value="Nombre:">
+                        <input type="text" required readonly class="form-control-plaintext frase1"  class="staticEmail2" value="Nombre:">
                       </div>
                       <div class="">
                         <label for="" class="visually-hidden">Ingrese su nombre completo</label>
-                        <input type="" class="form-control" id="" placeholder="Ingrese su nombre completo">
+                        <input type="" id="nombre" required class="form-control" id="" placeholder="Ingrese su nombre completo">
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="">
                         <label for="staticEmail2" class="visually-hidden">Apellido:</label>
-                        <input type="text" readonly class="form-control-plaintext frase1"  class="staticEmail2" value="Apellido:">
+                        <input type="text" required readonly class="form-control-plaintext frase1"  class="staticEmail2" value="Apellido:">
                       </div>
                       <div class="">
                         <label for="" class="visually-hidden">Ingrese su apellido</label>
-                        <input type="" class="form-control" id="" placeholder="Ingrese su apellido">
+                        <input type="" id="apellido" required class="form-control" id="" placeholder="Ingrese su apellido">
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="">
                         <label for="staticEmail2" class="visually-hidden">Numero:</label>
-                        <input type="text" readonly class="form-control-plaintext frase1" class="staticEmail2" value="Numero:">
+                        <input type="text" required readonly class="form-control-plaintext frase1" class="staticEmail2" value="Numero:">
                       </div>
                       <div class="">
                         <label for="" class="visually-hidden">Ej:3510000000</label>
-                        <input type="" class="form-control" id="" placeholder="Ej:3510000000">
+                        <input type="" id="numero" required class="form-control" id="" placeholder="Ej:3510000000">
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="">
                         <label for="staticEmail2" class="visually-hidden">Mail:</label>
-                        <input type="text" readonly class="form-control-plaintext frase1" class="staticEmail2" value="Mail:">
+                        <input type="text" required readonly class="form-control-plaintext frase1" class="staticEmail2" value="Mail:">
                       </div>
                       <div class="">
-                        <label for="" class="visually-hidden">Ej:3510000000</label>
-                        <input type="" class="form-control" id="" placeholder="ejemplo@mail.com">
+                        <label for="" class="visually-hidden">Ej:ejemplo@mail.com</label>
+                        <input type="" id="mail" required class="form-control" id="" placeholder="ejemplo@mail.com">
                       </div>
                     </div>
                     <div>
                       <p class="seleccione">Indique su genero</p>
                       <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" class="flexRadioDefault1">
+                          <input class="form-check-input" id="femenino" required type="radio" name="flexRadioDefault" class="flexRadioDefault1">
                           <label class="form-check-label frase1" for="flexRadioDefault1">
                             Femenino
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" class="flexRadioDefault2" checked>
+                          <input class="form-check-input" id="masculino" required type="radio" name="flexRadioDefault" class="flexRadioDefault2" checked>
                           <label class="form-check-label frase1" for="flexRadioDefault2">
                             Masculino
                           </label>
                        </div>
                        <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" class="flexRadioDefault2" checked>
+                              <input class="form-check-input" id="otro" required type="radio" name="flexRadioDefault" class="flexRadioDefault2" checked>
                               <label class="form-check-label frase1" for="flexRadioDefault2">
                                 Otro
                               </label>
@@ -109,19 +109,17 @@
                       </select>
                       <div class="">
                         <label for="exampleFormControlTextarea1" class="form-label seleccione1 rog g-3">Formación:</label>
-                        <textarea class="form-control col-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control col-3" id="formacion" required id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
                       <div class="">
                           <label for="exampleFormControlTextarea1" class="form-label seleccione1 rog g-3">¿En que área estas interesado?</label>
-                          <textarea class="form-control col-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea class="form-control col-3" id="area" required id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" id="botonEnviar"class="btn enviar">Enviar</button>
                         </div>
                   </form>
-                  <div class="col-auto">
-                    <button id="botonEnviar"class="btn enviar">Enviar</button>
-                  </div>
                 </div>
-
-
    </main>
    <footer class="footer">
     <div class= "text-center">

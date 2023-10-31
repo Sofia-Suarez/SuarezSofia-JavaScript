@@ -2,25 +2,25 @@
     {
         "nombre": "Pasteleria",
         "temas": "Masas, meregnues, tartas, tortas,etc.",
-        "duracíon": "6 meses",
+        "duracion": "6 meses",
         "precio": "$60000"
     },
     {
         "nombre": "Amateur",
         "temas": "sushi, empanadas, tartas, paellas,etc.",
-        "duracíon": "4 meses",
+        "duracion": "4 meses",
         "precio": "$45000"
     },
     {
         "nombre": "Bartender",
         "temas": "caipiriña, fernet, whisky, cervazas,etc.",
-        "duracíon": "10 meses",
+        "duracion": "10 meses",
         "precio": "$90000"
     },
     {
         "nombre": "Panes",
         "temas": "minion, frances, masa madre,etc.",
-        "duracíon": "3 meses",
+        "duracion": "3 meses",
         "precio": "$40000"
     }
 

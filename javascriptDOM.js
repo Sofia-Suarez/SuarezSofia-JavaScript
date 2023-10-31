@@ -1,7 +1,9 @@
 let formInscripcion = document.getElementById ("formInscripcion")
 let botonBuscar = document.getElementById("buscador")
 let botonEnviar = document.getElementById ("botonEnviar")
-botonEnviar.addEventListener ("click" , () => {
+formInscripcion.addEventListener ("submit" , (e) => {
+    e.preventDefault()
+    guardarUsuarioEnLS()
     inscripcionEnviada()
 })
 
@@ -56,4 +58,32 @@ function inscripcionEnviada (){
     timer: 3000
   })
 }
+function guardarUsuarioEnLS(){
+  const nombre= document.getElementById ("nombre").value;
+  const apellido= document.getElementById ("apellido").value;
+  const numero= document.getElementById ("numero").value;
+  const mail= document.getElementById ("mail").value;
+  const femenino= document.getElementById ("femenino").value;
+  const masculino= document.getElementById ("masculino").value;
+  const otro= document.getElementById ("otro").value;
+  const formacion= document.getElementById ("formacion").value;
+  const area= document.getElementById ("area").value;
+  const usuario={
+    nombre:nombre,
+    apellido:apellido,
+    numero:numero,
+    mail:mail,
+    femenino:femenino,
+    masculino:masculino,
+    otro:otro,
+    formacion:formacion,
+    area:area,
+  };
+localStorage.setItem(`usuario`,JSON.stringify(usuario));
+  }
+
 cargaCursos()
+
+
+
+
